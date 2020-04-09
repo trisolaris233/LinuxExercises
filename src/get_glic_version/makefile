@@ -1,5 +1,5 @@
 ROOT=..
-include $(ROOT)/flags.makefile
+CFLAGS=-I../../include
 
 a.out:
 	$(CC) $(CFLAGS) get_glic_version.c -o a.out
