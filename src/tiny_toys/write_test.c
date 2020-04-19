@@ -11,7 +11,7 @@ int main() {
     fd3 = open(file, O_RDWR);
     write(fd1, "Hello,", 6);
     // hello,
-    write(fd2, "world", 6);
+    write(fd2, "world", 5);
     // hello,world
     lseek(fd2, 0, SEEK_SET);
     // hello,world

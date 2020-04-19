@@ -3,7 +3,7 @@
 #include <fcntl.h>
 
 int main(int argc, char** argv) {
-    if (3 > argc || argv[1] == "--help")
+    if (3 > argc || 0==strcmp(argv[1], "--help"))
         usageErr("%s filepath bytes-to-write [x](open O_APPEND flag)", argv[0]);
 
     char* filepath = argv[1];
