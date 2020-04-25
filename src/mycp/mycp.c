@@ -2,8 +2,6 @@
 #include <fcntl.h>
 #include "tlpi_hdr.h"
 
-#define BUFFER_SIZE 1024
-
 int main(int argc, char** argv) {
 
     if (argc < 3 || strcmp("--help", argv[1]) == 0) 
